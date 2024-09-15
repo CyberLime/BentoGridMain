@@ -14,7 +14,7 @@ const BentoGridElement = ({
 }) => {
   return (
     <li className={`e e${className}`}>
-      {/*//? iterating through object's keys to use them like html elements */}
+      {/*//? iterating through object's keys to use them like html elements (this will help to generate elements in order of the keys in that object) */}
       {Object.keys(data).map((element, index) => {
         // ensure element is a valid HTML element to prevent a runtime error
         if (

@@ -8,10 +8,10 @@ import CreatePostImg from "/assets/images/illustration-create-post.webp";
 import AIContentImg from "/assets/images/illustration-ai-content.webp";
 
 export const BENTOGRIDELEMENTDATA: {
-  h1: string;
+  //? type that will be used in dangerouslySetInnerHTML prop (tags in string will work there)
+  h1: string | TrustedHTML;
   img: string;
-  //? type that will be used in dangerouslySetInnerHTML prop
-  p?: string | TrustedHTML;
+  p?: string;
 }[] = [
   {
     h1: "Social Media <span>10x</span> <i>Faster</i> with AI",

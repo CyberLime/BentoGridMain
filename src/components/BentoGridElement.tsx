@@ -6,10 +6,10 @@ const BentoGridElement = ({
 }: {
   className: string;
   data: {
-    h1: string;
-    img: string;
     //? type that will be used in dangerouslySetInnerHTML prop
-    p?: string | TrustedHTML;
+    h1: string | TrustedHTML;
+    img: string;
+    p?: string;
   };
 }) => {
   return (
